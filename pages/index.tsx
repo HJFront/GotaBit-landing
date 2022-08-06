@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Button, Typography, TypographyProps } from '@mui/material'
+import { Typography, TypographyProps } from '@mui/material'
 import { Box, Container } from '@mui/system'
 import { NextPage } from 'next'
 import Head from 'next/head'
