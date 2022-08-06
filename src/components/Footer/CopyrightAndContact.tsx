@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import ContactIcons from '../ContactIcons'
 
 const CopyrightAndContact = ({ isGrey }: { isGrey?: boolean }) => {
-  const { t } = useTranslation('footer')
+  const { t } = useTranslation('index')
 
   return (
     <Box
