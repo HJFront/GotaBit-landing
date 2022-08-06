@@ -1,6 +1,6 @@
-import { PaletteMode } from '@mui/material'
+import { PaletteMode, ThemeOptions } from '@mui/material'
 
-const getDesignTokens = (mode: PaletteMode) => ({
+const getDesignTokens: (mode: PaletteMode) => ThemeOptions = (mode: PaletteMode) => ({
   palette: {
     mode,
     ...(mode === 'light'
@@ -34,6 +34,16 @@ const getDesignTokens = (mode: PaletteMode) => ({
         },
       }),
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'none',
+          fontWeight: 500,
+        },
+      },
+    },
+  }
 })
 
 export default getDesignTokens

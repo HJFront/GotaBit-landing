@@ -6,7 +6,7 @@ import Link from '../Link'
 import Logo from './Logo'
 
 const LandingNav = () => {
-  const { t } = useTranslation('nav')
+  const { t } = useTranslation('index')
 
   const items = [
     // {
@@ -85,6 +85,9 @@ const LandingNav = () => {
                   mr: ['4px', 0],
                   color: 'rgba(255, 255, 255, 0.7)',
                   cursor: 'pointer',
+                  '&:hover': {
+                    color: 'text.info',
+                  },
                 }}
               >
                 {item.label}

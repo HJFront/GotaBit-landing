@@ -10,6 +10,7 @@ import LandingNav from 'src/components/LandingNav'
 import GradientButton from 'src/components/Buttons/GradientButton'
 import CopyrightAndContact from 'src/components/Footer/CopyrightAndContact'
 import styles from 'src/components/LandingBg/index.module.css'
+import OutlineButton from 'src/components/Buttons/OutlineButton'
 
 const StyledTypography = styled((props: TypographyProps) => (
   <Typography
@@ -77,28 +78,20 @@ const Home: NextPage = () => {
                 >
                   {t('Start')}
                 </GradientButton>
-                <Button
-                  variant="outlined"
-                  disableElevation
+                <OutlineButton
                   sx={{
                     width: ['200px', '280px'],
                     height: ['50px', '64px'],
                     borderRadius: ['50px', '64px'],
                     fontSize: ['14px', '18px'],
                     fontWeight: 500,
-                    border: '2px solid #fff',
-                    color: '#fff',
                     ml: [0, '28px'],
                     mt: ['30px', 0],
-                    backgroundColor: ['transparent'],
-                    '&:hover': {
-                      backgroundColor: ['transparent'],
-                      border: '2px solid',
-                    },
+                    color: 'rgba(255, 255, 255, 1)',
                   }}
                 >
                   {t('Join The Community')}
-                </Button>
+                </OutlineButton>
               </Box>
             </Box>
           </Box>
