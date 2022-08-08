@@ -45,10 +45,9 @@ const Home: NextPage = () => {
           <Box
             sx={{
               width: '100%',
-              height: '100%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
+              height: '90%',
+              display: 'grid',
+              placeItems: 'center',
             }}
           >
             <Box>
