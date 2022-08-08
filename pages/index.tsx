@@ -18,9 +18,10 @@ const StyledTypography = styled((props: TypographyProps) => (
     className={styles.title}
     sx={{
       fontWeight: 600,
-      fontSize: ['24px', '40px', '56px'],
+      fontSize: 'clamp(19px, 3.8vw, 56px)',
       textAlign: 'center',
       color: '#fff',
+      textSizeAdjust: 'auto',
     }}
   />
 ))()
@@ -38,7 +39,7 @@ const Home: NextPage = () => {
           sx={{
             position: 'relative',
             height: '100%',
-            margin: '0 24px'
+            margin: '0 24px',
           }}
         >
           <LandingNav />
