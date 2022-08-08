@@ -77,7 +77,7 @@ const Home: NextPage = () => {
                 >
                   {t('Start')}
                 </GradientButton>
-                <OutlineButton
+                {/* <OutlineButton
                   sx={{
                     width: ['200px', '280px'],
                     height: ['50px', '64px'],
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
                   }}
                 >
                   {t('Join The Community')}
-                </OutlineButton>
+                </OutlineButton> */}
               </Box>
             </Box>
           </Box>
