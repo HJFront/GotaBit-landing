@@ -34,11 +34,11 @@ const Home: NextPage = () => {
         <title>{t('Landing Page')}</title>
       </Head>
       <LandingBgProvider>
-        <Container
-          maxWidth="lg"
+        <Box
           sx={{
             position: 'relative',
             height: '100%',
+            margin: '0 24px'
           }}
         >
           <LandingNav />
@@ -98,12 +98,13 @@ const Home: NextPage = () => {
             sx={{
               position: 'absolute',
               bottom: 0,
+              left: 0,
               width: '100%',
             }}
           >
             <CopyrightAndContact isGrey />
           </Box>
-        </Container>
+        </Box>
       </LandingBgProvider>
     </>
   )
